@@ -1,0 +1,37 @@
+Metadata-Version: 2.4
+Name: uq-finn
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+Requires-Dist: ipykernel>=7.1.0
+Requires-Dist: keras>=3.13.1
+Requires-Dist: matplotlib>=3.10.8
+Requires-Dist: numpy>=2.4.1
+Requires-Dist: openpyxl>=3.1.5
+Requires-Dist: pandas>=3.0.0
+Requires-Dist: scikit-learn>=1.8.0
+Requires-Dist: seaborn>=0.13.2
+Requires-Dist: sympy>=1.14.0
+Requires-Dist: tensorflow>=2.20.0
+Requires-Dist: torch>=2.10.0
+Requires-Dist: torchdiffeq>=0.2.5
+Requires-Dist: tqdm>=4.67.1
+
+# UQ for FINN (Efficient Confidence Interval Computation for Physics-Aware ML)
+Supplementary code to replicate key experiments from our paper.
+
+## Installation
+Create a new environment with Python 3.13. Install the required dependencies by running:
+```bash
+pip install .
+```
+
+## Reproducing Results
+To reproduce the results presented, run notebooks:
+```bash
+run-uq.ipnyb
+plots_results.ipynb
+plots_runtime.ipynb
+```
+The configuration files are provided in the `configs.py` files for each component, i.e. each subfolder (finn, pi3nn, ddb).
